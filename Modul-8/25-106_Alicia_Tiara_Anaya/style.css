@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.navbar {
+    background-color: #1e3a8a !important;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 20px;
+    color: #ffffff !important;
+}
+
+.navbar a {
+    color: #cbd5e1 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff !important;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.15);
+    z-index: 999;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: #334155 !important;
+    padding: 12px 16px !important;
+    text-decoration: none;
+    display: block !important;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f5f9 !important;
+    color: #1e3a8a !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info {
+    color: #ffffff !important;
+    font-size: 0.9rem;
+}
+
+.btn-logout {
+    background-color: #ef4444 !important;
+    color: white !important;
+    padding: 6px 14px !important;
+    border-radius: 4px;
+    text-decoration: none !important;
+}
+
+.btn-logout:hover {
+    background-color: #dc2626 !important;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 1.35rem;
+    color: #0f172a;
+}
+
+main a:not(.navbar a), main button {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #0284c7;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    vertical-align: middle;
+}
+
+main a:not(.navbar a):hover, main button:hover {
+    background-color: #0369a1;
+}
+
+main a[href*="delete"], main a[href*="hapus"] {
+    background-color: #ef4444;
+}
+
+main a[href*="delete"]:hover, main a[href*="hapus"]:hover {
+    background-color: #dc2626;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #475569;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+form {
+    margin-top: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #0284c7;
+}
